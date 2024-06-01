@@ -38,7 +38,7 @@ search.addEventListener('click', () => {
 
 const fetchAdhan = async (lat, lon) => {
     try {
-        const response = await fetch(`http://api.aladhan.com/v1/timings/1-6-2024?latitude=${lat}&longitude=${lon}&method=3`);
+        const response = await fetch(`https://api.aladhan.com/v1/timings/1-6-2024?latitude=${lat}&longitude=${lon}&method=3`);
         const data = await response.json();
 
         const timings = data.data.timings;

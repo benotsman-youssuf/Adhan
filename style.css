@@ -1,192 +1,243 @@
 /* Reset and basic styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333333;
-  }
-  
-  /* Header and navigation */
-  header {
-    background-color: #7A4069;
-    color: #FFFFFF;
-    padding: 1rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 1rem;
-  }
-  
-  nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #FFD700;
-  }
-  
-  /* Hero section */
-  .hero {
-    background-image: linear-gradient(to right, #7A4069, #C38D9E);
-    color: #FFFFFF;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  .arabic-heading {
-    font-family: 'Cairo', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  .arabic-description {
-    font-family: 'Cairo', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  .location span {
-    font-size: 1.2rem;
-    margin: 0 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .hero button:hover {
-    background-color: #FFF0A5;
-    color: #4D2942;
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f8f8f8;
+}
+
+/* Header and navigation */
+header {
+  background-color: #7A4069;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #FFD700;
+  color: #7A4069;
+  transform: scale(1.1);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to bottom, rgba(122, 64, 105, 0.8), rgba(195, 141, 158, 0.8)), url('./img/medina.jpg') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arabic-heading {
+  font-family: 'Cairo', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.arabic-description {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.location span {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.search-bar input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 1rem;
+}
+.search-bar button {
+  background-color: #FFD700;
+  color: #7A4069;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar button:hover {
+  background-color: #FFF0A5;
+  color: #4D2942;
+}
+
+.search-bar button i {
+  margin-right: 0.5rem;
+}
+
+/* Prayer Times and Hisnul Muslim sections */
+.prayer-times,
+.hisnul-muslim {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prayer-times h2,
+.hisnul-muslim h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7a4069;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-times-container,
+.hisnul-muslim-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.prayer-times-container > div {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.prayer-times-container > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prayer-times-container > div > p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #7A4069;
+  font-weight: bold;
+}
+
+.prayer-times-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7A4069;
+  background-color: #ffd90085;
+  border-radius: 10px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #7A4069;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .arabic-heading {
+      font-size: 2rem;
   }
-  
-  /* Prayer Times and Hisnul Muslim sections */
-  .prayer-times,
-  .hisnul-muslim {
-    text-align: center;
-    max-width: 1400px;
-    padding: 2rem;
-    margin: 0 auto;
+
+  .arabic-description {
+      font-size: 1.2rem;
   }
-  
-  .prayer-times h2,
-  .hisnul-muslim h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #7a4069;
+
+  .location span {
+      font-size: 1rem;
   }
-  
+
   .prayer-times-container,
   .hisnul-muslim-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1rem;
-  }
-  .prayer-times-container> div{
-    /* padding: 2rem; */
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.prayer-times-container> div> p{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #7A4069;
-}
-  h3{
-    width: 100%;
-    height: 40%;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #7A4069;
-    background-color: #ffd90085;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  /* Footer */
-  footer {
-    background-color: #7A4069;
-    color: #FFFFFF;
-    padding: 1rem;
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
+  .prayer-times-container > div > p {
+      font-size: 1.2rem;
+  }
 
-
-  /* ---------------------------------------------- */
+  .prayer-times-container h3 {
+      font-size: 1.5rem;
+  }
   .search-bar {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5;
-    border-radius: 25px;
-    padding: 5px 10px;
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #search-input {
-    flex: 1;
-    border: none;
-    background-color: transparent;
+    border-radius: 15px;
     padding: 10px;
-    font-size: 16px;
-    outline: none;
-  }
-  
-  #search-button {
-    background-color: #FFD700;
-    color: #7A4069;
-    border: none;
-    padding: 1rem ;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  #search-button:hover {
-    background-color: #562c49;
-  }
-  
-  .search-icon {
-    width: 20px;
-    height: 20px;
-  }
+}
+
+.search-bar input {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.search-bar button {
+    width: 100%;
+    border-radius: 15px;
+}
+}
+
