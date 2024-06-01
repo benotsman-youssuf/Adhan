@@ -2,7 +2,7 @@
 
 <img src="./img/image.png">
 
-This application provides real-time prayer times based on the user's location.
+[Adhan](https://youssuf.tech/Adhan/) application provides real-time prayer times based on the user's location.
 
 ## Features
 
