@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Time and Hisnul Muslim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cairo:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+
+</head>
+<body>
+
+  <main>
+    <section class="hero">
+        <h1 class="arabic-heading">لا تفوّت أوقات صلواتك</h1>
+        <p class="arabic-description">تعرّف على أوقات الصلاة واطّلع على حصن المسلم</p>  
+        <div class="location">
+            <span id="city-name">City Name</span>
+            <span id="real-time"></span>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="search-input">
+          <button id="search-button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        
+    </section>
+
+    <section class="prayer-times">
+      <h2>Prayer Times</h2>
+      <div class="prayer-times-container">
+        <div id="fajr">
+            <h3>Fajr</h3>
+            <p id="fajr-time">00:00</p>        
+        </div>
+
+        <div id="Dhuhr">
+            <h3>Dhuhr</h3>
+            <p id="dhuhr-time">00:00</p>
+        </div>
+
+        <div id="Asr">  
+            <h3>Asr</h3>
+            <p id="asr-time">00:00</p>
+        </div>
+
+        <div id="Maghrib">
+            <h3>Maghrib</h3>
+            <p id="maghrib-time">00:00</p>
+        </div>
+
+        <div id="Isha">  
+            <h3>Isha</h3>
+            <p id="isha-time">00:00</p>
+        </div>
+      </div>
+    </section>
+  <script src="./script.js"></script>
+</body>
+</html>
