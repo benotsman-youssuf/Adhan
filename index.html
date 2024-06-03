@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adhan</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +14,37 @@
 <body>
     <main>
         <section class="hero">
-            <h1 class="arabic-heading">لا تفوّت أوقات صلواتك</h1>
-            <p class="arabic-description">تعرّف على أوقات الصلاة واطّلع على حصن المسلم</p>
-            <div class="location">
-                <span id="city-name">City Name</span>
-                <span id="real-time"></span>
+
+            <div class="headings">
+                <h1 class="arabic-heading">لا تفوّت أوقات صلواتك</h1>
+                <p class="arabic-description">تعرّف على أوقات الصلاة واطّلع على حصن المسلم</p>
             </div>
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Enter city name">
-                <button id="search-button"><i class="fas fa-search"></i></button>
+
+            <div class="hisnAndSearch">
+                <div class="place">
+                    <div class="location">
+                        <span id="city-name">City Name</span>
+                        <span id="real-time"></span>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Enter city name">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="hisn">
+                    <div class="hadith">
+                        <ul id="hadithList"></ul>
+                    </div>
+                    <div class="bab">
+                        <ul id="babList">
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </section>
+
 
         <section class="prayer-times">
             <h2>Prayer Times</h2>
@@ -52,5 +73,6 @@
         </section>
     </main>
     <script src="script.js"></script>
+    <script src="./hisn.js"></script>
 </body>
 </html>
