@@ -3,6 +3,7 @@ const search = document.getElementById('search-button');const input = document.g
 const city = document.getElementById('city-name');
 const realTime = document.getElementById('real-time');
 const hero = document.querySelector('.hero');
+const widget = document.querySelector('.widget');
 
 const fajrTime = document.getElementById('fajr-time');
 const dhuhrTime = document.getElementById('dhuhr-time');
@@ -103,6 +104,7 @@ const AdhanBehaviour = () => {
     }
 };
 AdhanBehaviour();
+setInterval(AdhanBehaviour, 60000);``
 
 
 
